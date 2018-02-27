@@ -29,6 +29,6 @@ class MessageInput extends React.Component {
       </div>
     );
   }
-}
+} 
 
 export default withStyles(styles)(MessageInput);
