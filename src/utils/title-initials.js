@@ -8,6 +8,6 @@ export default function titleInitials(title) {
       .join('');
   } catch (e) {
     console.error(e);
-    return '🐶';
+    return 'FAIL';
   }
 }
