@@ -24,7 +24,7 @@ class MessageInput extends React.Component {
     return (
       <div className={classes.messageInputWrapper}>
         <Paper className={classes.messageInput} elevation={6}>
-          <Input fullWidth placeholder="Type your message…" />
+          <Input fullWidth placeholder="Type your message…"/>
         </Paper>
       </div>
     );

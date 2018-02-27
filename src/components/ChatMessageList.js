@@ -30,7 +30,7 @@ class ChatMessageList extends React.Component {
 
   render() {
     const { classes, messages } = this.props;
-
+  
     return (
       <div className={classes.messagesWrapper} ref="messagesWrapper">
         {messages && messages.map((message, index) => (

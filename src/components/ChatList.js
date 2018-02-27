@@ -11,7 +11,7 @@ const styles = theme => ({
 });
 
 const ChatList = ({ classes, chats }) => (
-  <List className={classes.chatList}>
+  <List className={classes.chatsList}>
     {chats && chats.map((chat, index) => (
       <ChatListItem key={index} {...chat} />
     ))}

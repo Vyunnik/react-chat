@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles'
 import ChatMessageList from './ChatMessageList';
 import MessageInput from './MessageInput';
 
@@ -20,5 +20,5 @@ const Chat = ({ classes, messages }) => (
     <MessageInput />
   </main>
 );
-  
+
 export default withStyles(styles)(Chat);

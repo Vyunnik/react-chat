@@ -13,9 +13,9 @@ import deepPurple from 'material-ui/colors/deepPurple';
 import blueGrey from 'material-ui/colors/blueGrey';
 
 const colors = [
-  red, pink, purple, indigo, blue, teal, green, lightGreen, amber, orange,
-  deepOrange, deepPurple, blueGrey
-]
+  red, pink, purple, indigo, blue, teal, green, lightGreen, amber,
+  orange, deepOrange, deepPurple, blueGrey
+];
 
 export default function colorFrom(string) {
   try {
@@ -25,7 +25,7 @@ export default function colorFrom(string) {
       .map(char => char.charCodeAt())
       .reduce((sum, num) => sum + num, 0);
 
-    const colorIndex = index & colors.length;
+    const colorIndex = index % colors.length;
 
     return colors[colorIndex][500];
   } catch (e) {
