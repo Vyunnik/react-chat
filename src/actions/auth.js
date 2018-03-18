@@ -2,7 +2,6 @@ import * as types from '../constants/index';
 import * as paths from '../constants/api-paths';
 import callApi from '../utils/call-api';
 
-
 export function signup(username, password) {
     return (dispatch) => {
         dispatch({
@@ -73,11 +72,9 @@ export function receiveAuth() {
     return (dispatch, getState) => {
         const { token } = getState().auth;
 
-        if (!token) {
             dispatch({
-                type: types.RECEIVE_AUTH_FAILURE,
+                type: types.RECEIVE_AUTH_REQUEST,
             })
-        }
 
         return callApi(paths.RECEIVE_AUTH, token)            
             .then(json => dispatch({
@@ -89,4 +86,4 @@ export function receiveAuth() {
                 payload: reason,
             }));
     };
-}
+};

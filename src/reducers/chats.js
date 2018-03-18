@@ -1,5 +1,5 @@
 import * as types from '../constants/chats';
-import { combineReducer } from 'redux';
+import { combineReducers } from 'redux';
 
 const initialState = {
     activeId: '',
@@ -9,8 +9,6 @@ const initialState = {
 };
 
 export const getChatId = (chat) => chat._id;
-
-export const getById = (chats, ids) => chats[id];
 
 export const getByIds = (state, ids) => ids.map(id => state.byIds[id]);
 
@@ -55,11 +53,11 @@ const byIds = (state = initialState.byIds, action) => {
                 }), {}),
             }
         default:
-            break;
+            return state;
     }
 };
 
-export default combineReducer({
+export default combineReducers({
     activeId,
     allIds,
     myIds,

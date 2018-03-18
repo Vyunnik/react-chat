@@ -11,7 +11,7 @@ export function fetchMyChats() {
             type: types.FETCH_MY_CHATS_REQUEST,
         });
 
-        return callApi(paths.MY_CHATS)
+        return callApi(paths.MY_CHATS, token)
             .then(data => dispatch({
                 type: types.FETCH_MY_CHATS_SUCCESS,
                 payload: data,
@@ -31,7 +31,7 @@ export function fetchAllChats() {
             type: types.FETCH_ALL_CHATS_REQUEST,
         });
 
-        return callApi(paths.CHATS)
+        return callApi(paths.CHATS, token)
             .then(data => dispatch({
                 type: types.FETCH_ALL_CHATS_SUCCESS,
                 payload: data,
@@ -52,7 +52,7 @@ export function fetchChat(chatId) {
             type: types.FETCH_CHAT_REQUEST,
         })
 
-        return callApi(`${paths.CHAT}/${chatId}`)
+        return callApi(`${paths.CHAT}/${chatId}`, token)
             .then(data => {
                 dispatch({
                     type: types.FETCH_CHAT_SUCCESS,
