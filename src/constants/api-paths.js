@@ -1,3 +1,6 @@
-export const SIGNUP = Symbol('/signup');
-export const LOGIN = Symbol('/login');
-export const RECEIVE_AUTH = Symbol('/users/me');
+export const SIGNUP = String('/signup');
+export const LOGIN = String('/login');
+export const RECEIVE_AUTH = String('/users/me');
+export const CHATS = String('/chats');
+export const CHAT = String('/chat');
+export const MY_CHATS = String('/chats/my');
