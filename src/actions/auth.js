@@ -61,10 +61,24 @@ export function login(username, password) {
 };
 
 export function logout() {
-    return (dispatch) => {
+    return (dispatch, getState) => {
         dispatch({
             type: types.LOGOUT_REQUEST,
         });
+
+        return callApi(paths.LOGOUT)
+            .then(json => {
+                localStorage.removeItem('token');
+
+                dispatch({
+                    type: types.LOGOUT_SUCCESS,
+                    payload: json,
+                })
+            })
+            .catch(reason => dispatch({
+                type: types.LOGOUT_FAILURE,
+                payload: reason,
+            }));
     };
 };
 
@@ -72,11 +86,11 @@ export function receiveAuth() {
     return (dispatch, getState) => {
         const { token } = getState().auth;
 
-            dispatch({
-                type: types.RECEIVE_AUTH_REQUEST,
-            })
+        dispatch({
+            type: types.RECEIVE_AUTH_REQUEST,
+        })
 
-        return callApi(paths.RECEIVE_AUTH, token)            
+        return callApi(paths.RECEIVE_AUTH, token)
             .then(json => dispatch({
                 type: types.RECEIVE_AUTH_SUCCESS,
                 payload: json,
