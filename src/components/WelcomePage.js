@@ -26,7 +26,7 @@ class WelcomePage extends React.Component {
   }
 
   componentDidMount() {
-    this.props.receiveAuth();
+    this.props.recieveAuth();
   }
 
   handleTabChage = (event, value) => {
