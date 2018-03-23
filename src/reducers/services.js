@@ -21,6 +21,7 @@ const intialState = {
         auth: null,
         chat: null,
     },
+    isConnected: false,
 }
 
 export const isFetching = (state = intialState.isFetching, action) => {
@@ -133,7 +134,20 @@ export const errors = (state = intialState.errors, action) => {
     }
 }
 
+export const isConnected = (state = intialState.isConnected, action) => {
+    switch (action.type) {
+        case types.SOCKETS_CONNECTION_MISSING:
+        case types.SOCKETS_CONNECTION_FAILURE:
+            return false;
+        case types.SOCKETS_CONNECTION_SUCCESS:
+            return true;
+        default:
+            return state;
+    }
+}
+
 export default combineReducers({
     isFetching,
     errors,
+    isConnected,
 });
