@@ -1,10 +1,11 @@
+/* eslint no-underscore-dangle: 0 */
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from 'material-ui/styles';
 import ChatMessageList from './ChatMessageList';
 import MessageInput from './MessageInput';
 
-const styles = theme => ({
+const styles = () => ({
   chatLayout: {
     display: 'flex',
     justifyContent: 'center',
@@ -16,7 +17,9 @@ const styles = theme => ({
   },
 });
 
-const Chat = ({ classes, messages, activeChat, activeUser, joinChat, sendMessage, isConnected }) => (
+const Chat = ({
+  classes, messages, activeChat, activeUser, joinChat, sendMessage, isConnected,
+}) => (
   <main className={classes.chatLayout}>
     <ChatMessageList
       messages={messages}
