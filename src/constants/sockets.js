@@ -7,6 +7,6 @@ export const MOUNT_CHAT = Symbol('sockets/MOUNT_CHAT');
 export const UNMOUNT_CHAT = Symbol('sockets/UNMOUNT_CHAT');
 
 export const SEND_MESSAGE = Symbol('sockets/SEND_MESSAGE');
-export const RECEIVE_MESSAGE = Symbol('sockets/RECEIVE_MESSAGE');
-export const RECEIVE_NEW_CHAT = Symbol('sockets/RECEIVE_NEW_CHAT');
-export const RECEIVE_DELETED_CHAT = Symbol('sockets/RECEIVE_DELETED_CHAT');
+export const RECIEVE_MESSAGE = Symbol('sockets/RECIEVE_MESSAGE');
+export const RECIEVE_NEW_CHAT = Symbol('sockets/RECIEVE_NEW_CHAT');
+export const RECIEVE_DELETED_CHAT = Symbol('sockets/RECIEVE_DELETED_CHAT');
