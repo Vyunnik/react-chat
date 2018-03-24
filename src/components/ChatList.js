@@ -31,9 +31,9 @@ const ChatList = ({
       ))
     ) : (
       <Typography variant="subheading" className={classes.noChats}>
-          There is no chats yet...
+        There is no chats yet...
       </Typography>
-      )}
+    )}
   </List>
 );
 
