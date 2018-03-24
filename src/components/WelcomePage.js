@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { withStyles } from 'material-ui';
 import AppBar from 'material-ui/AppBar';
@@ -9,10 +10,12 @@ import Paper from 'material-ui/Paper';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
+import ErrorMessage from './ErrorMessage';
 
 const styles = theme => ({
   paper: {
-    marginTop: 64 + theme.spacing.unit * 3,
+    // eslint-disable-next-line
+    marginTop: theme.spacing.unit * 3 + 64,
     width: 500,
   },
   tabContent: {
@@ -21,6 +24,19 @@ const styles = theme => ({
 });
 
 class WelcomePage extends React.Component {
+  static propTypes = {
+    classes: PropTypes.objectOf(PropTypes.string).isRequired,
+    signup: PropTypes.func.isRequired,
+    login: PropTypes.func.isRequired,
+    recieveAuth: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool.isRequired,
+    error: PropTypes.instanceOf(Error),
+  };
+
+  static defaultProps = {
+    error: null,
+  };
+
   state = {
     activeTab: 0,
   };
@@ -35,8 +51,9 @@ class WelcomePage extends React.Component {
 
   render() {
     const {
-      classes, signup, login, isAuthenticated,
+      classes, signup, login, isAuthenticated, error,
     } = this.props;
+
     const { activeTab } = this.state;
 
     if (isAuthenticated) {
@@ -68,6 +85,7 @@ class WelcomePage extends React.Component {
             </Paper>
           </Grid>
         </Grid>
+        <ErrorMessage error={error} />
       </React.Fragment>
     );
   }
