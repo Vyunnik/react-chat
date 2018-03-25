@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="MuiPaper-root-105 MuiPaper-elevation4-111 MuiAppBar-root-97 MuiAppBar-positionFixed-98 MuiAppBar-colorPrimary-103 mui-fixed ChatHeader-appBar-95"
+>
+  <div
+    className="MuiToolbar-root-132 MuiToolbar-gutters-133"
+    color="contrast"
+  >
+    <div
+      className="MuiAvatar-root-134 MuiAvatar-colorDefault-135"
+      style={
+        Object {
+          "backgroundColor": "#ff9800",
+        }
+      }
+    >
+      AC
+    </div>
+    <h2
+      className="MuiTypography-root-137 MuiTypography-title-143 ChatHeader-appBarTitle-96"
+    >
+      Any chat
+      <button
+        aria-haspopup="true"
+        aria-owns={null}
+        className="MuiButtonBase-root-167 MuiIconButton-root-161 MuiIconButton-colorInherit-162"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label-166"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-170"
+            color={undefined}
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-176"
+        />
+      </button>
+    </h2>
+    <button
+      aria-haspopup="true"
+      aria-owns={null}
+      className="MuiButtonBase-root-167 MuiIconButton-root-161 MuiIconButton-colorInherit-162"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label-166"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root-170"
+          color={undefined}
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+          />
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root-176"
+      />
+    </button>
+  </div>
+</header>
+`;
+
+exports[`renders correctly 2`] = `
+<header
+  className="MuiPaper-root-105 MuiPaper-elevation4-111 MuiAppBar-root-97 MuiAppBar-positionFixed-98 MuiAppBar-colorPrimary-103 mui-fixed ChatHeader-appBar-95"
+>
+  <div
+    className="MuiToolbar-root-132 MuiToolbar-gutters-133"
+    color="contrast"
+  >
+    <div
+      className="MuiAvatar-root-134 MuiAvatar-colorDefault-135"
+      style={
+        Object {
+          "backgroundColor": "#ff9800",
+        }
+      }
+    >
+      AC
+    </div>
+    <h2
+      className="MuiTypography-root-137 MuiTypography-title-143 ChatHeader-appBarTitle-96"
+    >
+      Any chat
+      <button
+        aria-haspopup="true"
+        aria-owns={null}
+        className="MuiButtonBase-root-167 MuiIconButton-root-161 MuiIconButton-colorInherit-162"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label-166"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-170"
+            color={undefined}
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root-176"
+        />
+      </button>
+    </h2>
+    <button
+      aria-haspopup="true"
+      aria-owns={null}
+      className="MuiButtonBase-root-167 MuiIconButton-root-161 MuiIconButton-colorInherit-162"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label-166"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root-170"
+          color={undefined}
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+          />
+        </svg>
+      </span>
+      <span
+        className="MuiTouchRipple-root-176"
+      />
+    </button>
+  </div>
+</header>
+`;
